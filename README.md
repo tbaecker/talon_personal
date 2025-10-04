@@ -7,7 +7,8 @@
 1. `git clone https://github.com/talonhub/community.git`
 1. `git clone https://github.com/E5DR/talon_german.git --branch conformer`
 1. `git clone git@github.com:tbaecker/talon_personal.git`
-1. start Talon, download speech recognition engine (right click on the Talon symbol in the tasklist): conformer D2 (2025-01-06)
+1. Start Talon, download speech recognition engines (right click on the Talon symbol in the tasklist): `conformer D2 (2025-01-06)` and `conformer D - de_DE (2023-03-01)`
+1. Disable Talon's default subtitles from the Talon menu to avoid duplicates
 
 ## Useful docs and reference links
 - https://talonvoice.com/
