@@ -1,6 +1,9 @@
 tag: user.bash
 -
 
+# edit the current line with $EDITOR
+edit line:                  key(ctrl:down x e ctrl:up)
+
 flag:                       " -"
 flag <user.letters>:        " -{letters} "
 
@@ -77,7 +80,6 @@ exit:                       "exit\n"
 export:                     "export "
 find:                       "find "
 kill all:                   "killall "
-less:                       "less "
 man:                        "man "
 
 dig:                        "dig "
