@@ -64,7 +64,7 @@ op or:                      " || "
 pipe:                       " | "
 print exit code:            "echo $?\n"
 remove:                     "rm "
-reverse:                    key(cdrl-r)
+reverse:                    key(ctrl-r)
 revert:                     key(alt-r)
 ssh:                        "ssh "
 sudo:                       "sudo "
