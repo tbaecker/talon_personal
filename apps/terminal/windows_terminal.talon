@@ -3,6 +3,7 @@ app: windows_terminal
 -
 tag(): user.wsl
 tag(): user.bash
+tag(): user.docker
 
 split cross:                key(alt-shift-d)
 split right:                key(alt-shift-+)
