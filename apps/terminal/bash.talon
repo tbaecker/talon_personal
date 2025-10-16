@@ -1,8 +1,16 @@
 tag: user.bash
 -
 
-# edit the current line with $EDITOR
-edit line:                  key(ctrl:down x e ctrl:up)
+clear line:                 key(ctrl-u) # use readline key binding
+clear:                      key(ctrl-l)
+edit line:                  key(ctrl:down x e ctrl:up) # edit the current line with $EDITOR
+op and:                     " && "
+op or:                      " || "
+pipe:                       " | "
+print exit code:            "echo $?\n"
+reverse:                    key(ctrl-r)
+revert:                     key(alt-r)
+terminate:                  key(ctrl-c)
 
 flag:                       " -"
 flag <user.letters>:        " -{letters} "
@@ -15,7 +23,7 @@ dir <user.prose>$:          "cd {prose}"
 dir <user.letters>$:        "cd {letters}"
 dir <user.prose> tab$:      "cd {prose}\t"
 dir <user.letters> tab$:    "cd {letters}\t"
-dir etc:                    "cd /etc\n"
+dir etsy:                   "cd /etc\n"
 
 list:                       "ls -lah\n"
 list short:                 "ls\n"
@@ -41,34 +49,32 @@ copy dir:                   "pwd | clipboard\n"
 tar create:                 "tar -czvf "
 tar extractf:               "tar -xzvf "
 
-echo:                       "echo "
-echo <user.prose>$:         "echo {prose}"
-
 cat:                        "cat "
 change mode:                "chmod "
 change owner:               "chown "
-clear:                      key(ctrl-l)
 clipboard:                  "clipboard"
 copy:                       "cp "
 curl:                       "curl "
 dev null:                   "/dev/null"
 diff:                       "diff "
+echo <user.prose>$:         "echo {prose}"
+echo:                       "echo "
 exargs:                     "xargs "
 exec:                       "exec "
+exit:                       "exit\n"
+export:                     "export "
+find:                       "find "
 grep:                       "grep "
+kill all:                   "killall "
 less:                       "less "
 make dir:                   "mkdir "
+man:                        "man "
 move:                       "mv "
-op and:                     " && "
-op or:                      " || "
-pipe:                       " | "
-print exit code:            "echo $?\n"
+
 remove:                     "rm "
-reverse:                    key(ctrl-r)
-revert:                     key(alt-r)
 ssh:                        "ssh "
 sudo:                       "sudo "
-terminate:                  key(ctrl-c)
+
 unique:                     "uniq "
 vim:                        "vim "
 word count:                 "wc "
@@ -76,11 +82,7 @@ word count:                 "wc "
 apt install:                "apt install "
 apt update:                 "apt update\n"
 aptitude:                   "aptitude"
-exit:                       "exit\n"
-export:                     "export "
-find:                       "find "
-kill all:                   "killall "
-man:                        "man "
+shutdown reboot:            "shutdown -r now"
 
 dig:                        "dig "
 dot com:                    ".com"
